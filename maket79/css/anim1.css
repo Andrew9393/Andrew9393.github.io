@@ -1,0 +1,157 @@
+/*svg*/
+
+	.svgg{
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	#Layer_1{
+		width: 100px;
+		height: 100px;
+		text-align: center;
+		fill: white;
+		stroke: red;
+		stroke-width:1px;
+	}
+
+	.st4{
+		transition: all 1s ease;
+	}
+
+	.st6{
+		fill: green;
+		transition: all 1s ease;
+	}
+
+	#Layer_1:hover .st6{
+		fill: yellow;
+	
+	}
+
+	#Layer_1:hover .st4{
+		
+		stroke: green;
+	}
+
+
+
+
+/*animation*/
+
+
+	#Layer_1{
+		perspective: 550px;
+	}
+
+ 	.qqq {
+ 
+  transition: all 2.5s ease;
+  animation: rotate 2s linear infinite;
+  transform-origin: 20px 0px; 
+  perspective: 50px;
+
+  fill: grey;
+}
+
+/*@keyframes rotate {
+  from {
+    transform: rotateY(360deg);
+  }
+}*/
+
+	#Capa_1{
+		width: 200px;
+		height: 200px;
+		
+		transition: all 2.5s ease;
+		animation: rotate2 10s linear infinite;
+		transform-origin: 100px 100px; 
+	}
+
+	/*@keyframes rotate2 {
+		  from {
+		    transform: rotate(360deg);
+		  }
+		}
+*/
+	.q01, .q02, .q03, .q04, .q05, .q06, .q07, .q08, .q09{
+		fill: black;
+		
+		transition: all 1s ease;
+	}
+
+	#Capa_1:hover .q01{
+		fill: red
+	}
+
+	#Capa_1:hover .q02{
+		fill: green
+	}
+
+	#Capa_1:hover .q03{
+		fill: blue
+	}
+
+	#Capa_1:hover .q04{
+		fill: yellow
+	}
+
+	#Capa_1:hover .q05{
+		fill: pink
+	}
+
+	#Capa_1:hover .q06{
+		fill: lime
+	}
+
+	#Capa_1:hover .q07{
+		fill: grey
+	}
+
+	#Capa_1:hover .q08{
+		fill: orange
+	}
+	#Capa_1:hover .q09{
+		fill: tomato
+	}
+
+
+
+/*wrapper*/
+
+		.wrapper{
+			margin-top: 50px;
+			position: relative;
+
+		}
+
+		.icon{
+			width: 100px;
+			height: 100px;		
+
+		}
+
+		#slider{
+			width: 204px;
+			height: 104px;
+			border: 2px solid red;
+			margin: 50px auto;
+			overflow: hidden;
+		}
+
+		#polosa{
+			background: pink;
+			width: 600px;
+			position: relative;
+			left: 0;
+			transition: all 1s ease;
+		}
+
+		#polosa img{
+			float: left;
+		}
+		#polosa::after{
+			content: '';
+			display: block;
+			clear: both;
+		}
