@@ -436,15 +436,26 @@
 			ul{
 				padding: 15px 0 20px 0;
 			}
+
 			h1{
 				font-size: 2em;
 				padding: 2% 0 0 0;
 			}
-			h2{
-				font-size:1.6em;	
+
+			.wrapper{
+				padding-bottom: 10px;
 			}
-			p{
-				font-size: 1em;
+
+			.wrapper h2{
+				font-size:1.8em;	
+			}
+
+			.wrapper p{
+				font-size: 1.2em;
+			}
+
+			.wrapper1 h2{
+				padding:15px 0 0 0;
 			}
 			svg{
 				width: 80px;
@@ -454,7 +465,7 @@
 				transform-origin: 40px 40px;
 			}
 			.h p{
-				font-size: 1em;
+				font-size: 1.2em;
 			}
 			ul{
 				display: none;
@@ -473,7 +484,7 @@
 				justify-content: center;
 			}
 			.h{
-				padding: 0 0 0 0;
+				overflow-wrap: break-word;
 			}
 
 			
