@@ -497,6 +497,7 @@
 
 			.owl-nav {
 				position: relative;
+				font-size: 0;
 			
 			}
 
@@ -562,7 +563,7 @@
 				width: 30px;
 				height: 30px;
 				bottom: 70px;
-				right: -80px;
+				right: -60px;
 				transform: rotate(225deg);
 			}
 
@@ -586,7 +587,7 @@
 				width: 30px;
 				height: 30px;
 				bottom: 70px;
-				left: -80px;
+				left: -60px;
 				transform: rotate(45deg);
 			}
 
@@ -910,7 +911,80 @@
 
 
 			footer{
-				background: black;
+				background: #303030;
+			}
+			
+			.footer{
+				padding: 2% 0;
+				display: flex;
+				justify-content: space-between;
+				-ms-align-items: center;
+				align-items: center;
+			}
+			.footer_contacts .dropdown{
+				text-align: right;
+			}
+			.footer p{
+				font-family: 'Roboto Condensed', sans-serif;
+  				font-weight: 400;
+			    line-height: 20px;
+				font-size: 16px;
+   				color: #b9b9b9;
+			    text-transform: uppercase;
+			    text-align: right;
+			}
+			.social{
+				display: flex;
+				justify-content: flex-end;
+				padding: 0;
+				margin-top: 1em;
+
+			}
+			.social>li{
+				text-decoration: none;
+				list-style: none;
+				margin-right: 2%;
+				width: 50px;
+				height: 50px;
+				overflow: hidden;
+				border-radius: 10px;
+			}
+			.social>li:nth-child(4){
+				margin-right: 0;
 			}
 
-			
+			.social>li:hover{
+				box-shadow: 2px 2px 10px grey ;
+				border: 1px solid grey;
+			}
+
+			.insta{
+				background: url(../img/insta.png) -7px -7px no-repeat;
+			}
+			.facebook{
+				background: url(../img/facebook.png) -8px -7px no-repeat;
+			}
+			.vk{
+				background: url(../img/vk.png) -9px -7px no-repeat;
+			}
+			.tweet{
+				background: url(../img/tweet.png) -8px -5px no-repeat;
+			}
+
+				@media screen and (max-width: 960px){
+
+					.footer{
+						display: block;
+					}
+
+					.social{
+						justify-content: space-around;
+					}
+					.footer_contacts .dropdown{
+						text-align: center;
+						margin-top: 2%;	
+					}
+					.footer_logo{
+						text-align: center;
+					}
+				}
